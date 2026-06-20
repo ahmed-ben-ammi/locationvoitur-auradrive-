@@ -1,0 +1,558 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "fleet": "Nuestra Flota",
+    "guides": "Guías de Viaje",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "myReservations": "Mis Reservas",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión",
+    "adminFleet": "Gestionar Flota",
+    "adminReservations": "Gestionar Reservas",
+    "adminDashboard": "Panel de control",
+    "adminUsers": "Usuarios",
+    "adminContactMessages": "Mensajes de contacto",
+    "adminSettings": "Configuración",
+    "adminCreateReservation": "Crear Reserva"
+  },
+  "admin": {
+    "createReservation": {
+      "title": "Crear Reserva",
+      "selectClient": "Seleccionar Cliente",
+      "selectVehicle": "Seleccionar Vehículo",
+      "pickupDate": "Fecha de Recogida",
+      "returnDate": "Fecha de Devolución",
+      "create": "Crear Reserva",
+      "cancel": "Cancelar",
+      "creating": "Creando...",
+      "success": "¡Reserva creada exitosamente!",
+      "clientRequired": "Por favor, selecciona un cliente",
+      "vehicleRequired": "Por favor, selecciona un vehículo",
+      "datesRequired": "Por favor, selecciona ambas fechas",
+      "invalidDates": "La fecha de devolución debe ser posterior a la fecha de recogida",
+      "sendWhatsApp": "📱 Enviar mensaje WhatsApp",
+      "whatsApp": {
+        "greeting": "Hola {{name}}",
+        "message": "Se ha creado una nueva reserva para usted.",
+        "vehicle": "Vehículo: {{vehicle}}",
+        "pickup": "Fecha de recogida: {{date}}",
+        "return": "Fecha de devolución: {{date}}",
+        "thanks": "Gracias por confiar en nosotros."
+      }
+    }
+  },
+  "adminDashboard": {
+    "title": "Panel de control",
+    "welcomeMessage": "¡Bienvenido de nuevo, {{name}}!",
+    "stats": {
+      "totalCars": "Total de Coches",
+      "availableCars": "Coches Disponibles",
+      "reservedCars": "Coches Reservados",
+      "totalReservations": "Total de Reservas",
+      "pendingReservations": "Reservas Pendientes",
+      "confirmedReservations": "Reservas Confirmadas",
+      "completedReservations": "Reservas Completadas",
+      "cancelledReservations": "Reservas Canceladas",
+      "totalUsers": "Total de Usuarios",
+      "totalMessages": "Total de Mensajes",
+      "unreadMessages": "Mensajes No Leídos"
+    },
+    "recentActivity": {
+      "title": "Actividad Reciente",
+      "latestReservations": "Últimas Reservas",
+      "latestUsers": "Últimos Usuarios",
+      "latestCars": "Últimos Coches",
+      "latestMessages": "Últimos Mensajes"
+    },
+    "quickActions": {
+      "title": "Acciones Rápidas",
+      "addNewCar": "Añadir Nuevo Coche",
+      "manageFleet": "Gestionar Flota",
+      "viewReservations": "Ver Reservas",
+      "manageUsers": "Gestionar Usuarios",
+      "createReservation": "Crear Reserva"
+    },
+    "charts": {
+      "reservationsByStatus": "Reservas por Estado",
+      "monthlyReservations": "Reservas Mensuales",
+      "fleetAvailability": "Disponibilidad de la Flota",
+      "reservationsTrend": "Tendencias de Reservas"
+    },
+    "loading": "Cargando datos del panel..."
+  },
+  "adminContactMessages": {
+    "title": "Mensajes de Contacto",
+    "searchPlaceholder": "Buscar por nombre, teléfono o CNE...",
+    "filterAll": "Todos",
+    "filterRead": "Leídos",
+    "filterUnread": "No Leídos",
+    "noMessages": "No hay mensajes",
+    "messageFrom": "Mensaje de",
+    "phone": "Teléfono",
+    "cne": "CNE",
+    "message": "Mensaje",
+    "date": "Fecha",
+    "status": "Estado",
+    "read": "Leído",
+    "unread": "No Leído",
+    "delete": "Eliminar",
+    "confirmDelete": "¿Estás seguro de eliminar este mensaje?",
+    "deleteSuccess": "¡Mensaje eliminado correctamente!"
+  },
+  "adminCreateReservation": {
+    "title": "Crear Reserva",
+    "selectClient": "Seleccionar Cliente",
+    "selectVehicle": "Seleccionar Vehículo",
+    "pickupDate": "Fecha de Recogida",
+    "dropoffDate": "Fecha de Devolución",
+    "confirm": "Crear Reserva",
+    "creating": "Creando...",
+    "success": "Reserva creada con éxito",
+    "confirmSuccess": "¡Reserva creada exitosamente!",
+    "error": "Error al crear la reserva",
+    "clientRequired": "Seleccione un cliente",
+    "vehicleRequired": "Seleccione un vehículo",
+    "datesRequired": "Por favor, selecciona ambas fechas",
+    "invalidDates": "La fecha de devolución debe ser posterior a la fecha de recogida",
+    "sendWhatsApp": "📱 Enviar mensaje WhatsApp"
+  },
+  "adminReservations": {
+    "title": "Gestionar Reservas",
+    "all": "Todas",
+    "pending": "Pendientes",
+    "confirmed": "Confirmadas",
+    "rejected": "Rechazadas",
+    "searchPlaceholder": "Buscar por nombre, DNI, teléfono o marca...",
+    "reservationId": "ID de Reserva",
+    "customerInfo": "Información del Cliente",
+    "fullName": "Nombre Completo",
+    "cne": "DNI/NIE",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "pricePerDay": "Precio por Día",
+    "registrationNumber": "Número de Matrícula",
+    "rentalDuration": "Duración del Alquiler",
+    "days": "días",
+    "approve": "Aprobar",
+    "reject": "Rechazar",
+    "markAsCompleted": "Marcar como Completada",
+    "delete": "Eliminar",
+    "whatsApp": "Contactar vía WhatsApp",
+    "approveSuccess": "¡Reserva aprobada exitosamente!",
+    "rejectSuccess": "¡Reserva rechazada exitosamente!",
+    "markAsCompletedSuccess": "¡Reserva marcada como completada exitosamente!",
+    "deleteSuccess": "¡Reserva eliminada exitosamente!",
+    "loading": "Cargando reservas...",
+    "error": "Error al cargar las reservas",
+    "noResults": "No hay reservas que coincidan con tus filtros"
+  },
+  "adminUsers": {
+    "title": "Gestionar Usuarios",
+    "totalUsers": "Total Usuarios",
+    "totalClients": "Total Clientes",
+    "totalAdmins": "Total Admins",
+    "searchPlaceholder": "Buscar por nombre, teléfono o DNI...",
+    "noUsers": "No hay usuarios",
+    "fullName": "Nombre Completo",
+    "phone": "Teléfono",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "passwordPlaceholder": "Deja en blanco para mantener la contraseña actual",
+    "passwordRequired": "La contraseña es obligatoria",
+    "passwordsDoNotMatch": "Las contraseñas no coinciden",
+    "nameRequired": "El nombre completo es obligatorio",
+    "phoneRequired": "El número de teléfono es obligatorio",
+    "cneRequired": "El DNI es obligatorio",
+    "roleRequired": "El rol es obligatorio",
+    "role": "Rol",
+    "client": "Cliente",
+    "admin": "Admin",
+    "actions": "Acciones",
+    "addUser": "Agregar Nuevo Usuario",
+    "editUser": "Editar Usuario",
+    "add": "Agregar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "confirmDelete": "Confirmar Eliminación",
+    "confirmDeleteText": "¿Estás seguro de que quieres eliminar al usuario {{name}}? Esta acción no se puede deshacer.",
+    "addSuccess": "¡Usuario agregado exitosamente!",
+    "editSuccess": "¡Usuario actualizado exitosamente!",
+    "deleteSuccess": "¡Usuario eliminado exitosamente!",
+    "errorFetch": "Error al cargar los usuarios",
+    "errorSave": "Error al guardar el usuario",
+    "errorDelete": "Error al eliminar el usuario"
+  },
+  "profile": {
+    "title": "Mi Perfil",
+    "personalInfo": "Información Personal",
+    "security": "Seguridad",
+    "passwordHint": "Deja los campos de contraseña vacíos para mantener tu contraseña actual.",
+    "memberSince": "Miembro desde"
+  },
+  "reservations": {
+    "title": "Mis Reservas",
+    "subtitle": "Ver y gestionar todas tus reservas",
+    "reservationId": "ID de Reserva",
+    "pickupDate": "Fecha de Recogida",
+    "dropoffDate": "Fecha de Devolución",
+    "duration": "Duración",
+    "rentalDuration": "Duración del Alquiler",
+    "pricePerDay": "Precio por Día",
+    "days": "días",
+    "status": {
+      "en_attente": "Pendiente",
+      "confirmée": "Confirmada",
+      "annulée": "Cancelada",
+      "terminée": "Completada"
+    },
+    "delete": "Eliminar Reserva",
+    "confirmDelete": "Confirmar Eliminación",
+    "cancel": "Cancelar",
+    "deleting": "Eliminando...",
+    "noReservations": "No se encontraron Reservas",
+    "noReservationsDesc": "Aún no has realizado ninguna reserva.",
+    "browseFleet": "Explorar Flota",
+    "price": "Precio Total"
+  },
+  "hero": {
+    "title": "Descubre Marruecos a tu Propio Ritmo",
+    "subtitle": "Tu Aventura Marroquí Comienza Aquí.",
+    "cta": "Empezar a Explorar"
+  },
+  "auth": {
+    "loginTitle": "Bienvenido de nuevo",
+    "loginSubtitle": "Conéctate a tu cuenta y continúa reservando.",
+    "loginRequired": "Por favor inicia sesión para hacer una reserva.",
+    "clientRoleRequired": "Solo los clientes pueden hacer reservas.",
+    "registerTitle": "Crea tu cuenta",
+    "registerSubtitle": "Regístrate ahora y reserva tu próximo viaje.",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "fullName": "Nombre completo",
+    "phone": "Número de teléfono",
+    "rememberMe": "Recuérdame",
+    "loginButton": "Iniciar sesión",
+    "registerButton": "Registrarse",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "noAccount": "¿No tienes una cuenta?",
+    "linkLogin": "Inicia sesión",
+    "linkRegister": "Regístrate",
+    "passwordMismatch": "Las contraseñas no coinciden"
+  },
+  "fleet": {
+    "title": "Elige tu Compañero de Viaje",
+    "subtitle": "Elige el vehículo perfecto para tu viaje",
+    "registration": "Número de Matrícula",
+    "empty": {
+      "title": "No se encontraron coches",
+      "description": "Intenta seleccionar un rango de precio diferente o regresa más tarde para ver nuevas incorporaciones"
+    },
+    "filters": {
+      "all": "Todos",
+      "economy": "Económico",
+      "mid-range": "Medio",
+      "luxury": "Lujo"
+    },
+    "bookNow": "Reservar Ahora",
+    "auto": "Automático",
+    "manual": "Manual",
+    "fuel": {
+      "petrol": "Gasolina",
+      "diesel": "Diésel",
+      "electric": "Eléctrico",
+      "hybrid": "Híbrido"
+    },
+    "pricePerDay": "MAD / día",
+    "pricePerWeek": "MAD / semana",
+    "pricePerMonth": "MAD / mes"
+  },
+  "booking": {
+    "step1": "Resumen del Vehículo",
+    "step2": "Tus Datos",
+    "reserveNow": "Reservar este vehículo",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "confirm": "Confirmar vía WhatsApp",
+    "reserve": "Reservar",
+    "processing": "Procesando...",
+    "success": "¡Reserva creada exitosamente!",
+    "datesRequired": "Por favor selecciona las fechas de inicio y fin",
+    "invalidDateRange": "La fecha de fin debe ser después de la fecha de inicio",
+    "loading": "Cargando...",
+    "alreadyReserved": "Este vehículo ya está reservado para este período.",
+    "reservationError": "Ocurrió un error durante la reserva:",
+    "tryAgain": "Por favor, intenta con fechas diferentes.",
+    "form": {
+      "name": "Nombre Completo",
+      "phone": "Número de Teléfono",
+      "address": "Dirección",
+      "pickup": "Fecha de Recogida",
+      "dropoff": "Fecha de Devolución"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados. Drive Car Go.",
+    "sendMessage": "Enviar Mensaje"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "description": "Somos una agencia de alquiler de coches premium que ofrece un servicio rápido y fiable. Gestionamos las reservas rápidamente vía WhatsApp con respuesta inmediata al cliente.",
+    "stats": {
+      "response": "Tiempo de respuesta: < 5 mins",
+      "satisfaction": "100% Satisfacción",
+      "delivery": "Entrega Rápida"
+    }
+  },
+  "location": {
+    "title": "Nuestra Ubicación",
+    "description": "Aéroport Mohammed V, Casablanca"
+  },
+  "showcase": {
+    "title": "Elige tu Compañero de Viaje",
+    "bookNow": "Reservar Ahora"
+  },
+  "destinations": {
+    "title": "Destinos y Experiencias",
+    "card1": {
+      "title": "Montañas del Atlas y el Sahara",
+      "desc": "Conquista las dunas y valles.",
+      "recommend": "Recomendado: SUVs"
+    },
+    "card2": {
+      "title": "Escapadas Costeras",
+      "desc": "Relájate junto al océano desde Essaouira hasta Agadir.",
+      "recommend": "Recomendado: Lujo / Minibús"
+    },
+    "card3": {
+      "title": "Exploración de la Ciudad",
+      "desc": "Navega por las bulliciosas calles de Marrakech y Casablanca.",
+      "recommend": "Recomendado: Económico / Compacto"
+    }
+  },
+  "destinationDetails": {
+    "placesToVisitTitle": "Lugares para Visitar",
+    "recommendedCarsTitle": "Vehículos Recomendados",
+    "recommendedCarsSubtitle": "Vehículos más adecuados para este terreno.",
+    "mapTitle": "Explora la Ruta",
+    "mapSubtitle": "Conoce tu viaje en el mapa.",
+    "sahara": {
+      "title": "Montañas del Atlas y el Sahara",
+      "subtitle": "Experimenta los majestuosos picos y las interminables dunas.",
+      "places": {
+        "ouarzazate": {
+          "title": "Ouarzazate",
+          "desc": "Conocida como la puerta del desierto, esta ciudad es famosa por sus paisajes cinematográficos y antiguas kasbahs.",
+          "distance": "200 km de Marrakech"
+        },
+        "merzouga": {
+          "title": "Dunas de Merzouga",
+          "desc": "Presencia impresionantes puestas de sol sobre las imponentes dunas de arena de Erg Chebbi. Una experiencia verdaderamente mágica.",
+          "distance": "En lo profundo del Sahara"
+        },
+        "ait_ben_haddou": {
+          "title": "Aït Benhaddou",
+          "desc": "Un pueblo fortificado histórico a lo largo de la antigua ruta de caravanas entre el Sahara y Marrakech.",
+          "distance": "Patrimonio de la Humanidad por la UNESCO"
+        }
+      }
+    },
+    "coastal": {
+      "title": "Escapadas Costeras",
+      "subtitle": "Descubre playas tranquilas y vibrantes ciudades costeras.",
+      "places": {
+        "essaouira": {
+          "title": "Essaouira",
+          "desc": "Una encantadora ciudad portuaria con una hermosa medina, murallas históricas y un ambiente relajado y artístico.",
+          "distance": "190 km de Marrakech"
+        },
+        "taghazout": {
+          "title": "Taghazout",
+          "desc": "Un famoso pueblo de pescadores convertido en un paraíso para el surf. Perfecto para atrapar olas y relajarse en playas vírgenes.",
+          "distance": "Al norte de Agadir"
+        },
+        "agadir": {
+          "title": "Agadir",
+          "desc": "Conocida por su amplia playa en forma de media luna, su bullicioso paseo marítimo y sol durante todo el año.",
+          "distance": "Principal Centro Costero"
+        }
+      }
+    },
+    "city": {
+      "title": "Exploración de la Ciudad",
+      "subtitle": "Sumérgete en las bulliciosas medinas y la rica historia.",
+      "places": {
+        "marrakech": {
+          "title": "Marrakech",
+          "desc": "La Ciudad Roja, llena de vibrantes zocos, impresionantes palacios y la animada plaza Jemaa el-Fnaa.",
+          "distance": "Corazón Cultural"
+        },
+        "chefchaouen": {
+          "title": "Chefchaouen",
+          "desc": "La famosa Ciudad Azul enclavada en las Montañas del Rif, que ofrece callejuelas pintorescas y un ambiente tranquilo.",
+          "distance": "Joya del Norte"
+        },
+        "fes": {
+          "title": "Fez",
+          "desc": "Hogar de la universidad en funcionamiento continuo más antigua del mundo y una medina medieval increíblemente intrincada.",
+          "distance": "Capital Espiritual"
+        }
+      }
+    }
+  },
+  "blog": {
+    "title": "Guías de Viaje y Rutas por Marruecos",
+    "subtitle": "Descubre la belleza de Marruecos con nuestras guías de viaje exclusivas.",
+    "readMore": "Leer Más",
+    "publishedOn": "Publicado el",
+    "minRead": "min de lectura",
+    "articles": {
+      "ultimate-road-trip": {
+        "title": "El Viaje por Carretera Definitivo en Marruecos: De Tánger a Merzouga",
+        "excerpt": "Experimenta la diversidad de Marruecos, desde el encanto mediterráneo hasta las dunas doradas, en esta completa guía de viaje.",
+        "contentBlocks": [
+          "Comenzando tu viaje en Tánger, sentirás de inmediato la mezcla de la brisa mediterránea y la cultura norteafricana. El camino hacia el sur te lleva a través de las impresionantes Montañas del Rif, donde te espera la ciudad azul de Chefchaouen.",
+          "A medida que avanzas hacia el centro del país, el paisaje se transforma. El verde exuberante da paso a la cruda belleza del Medio Atlas, pasando por Ifrane y los bosques de cedros de Azrou.",
+          "El gran final de este viaje definitivo es llegar al Sahara. Conducir hasta Merzouga y ver las dunas doradas de Erg Chebbi elevarse desde el desierto plano es un recuerdo que durará toda la vida. Prepara tu SUV para una aventura inolvidable."
+        ]
+      },
+      "imperial-cities": {
+        "title": "Explorando las Ciudades Imperiales: Un Viaje Histórico",
+        "excerpt": "Haz un viaje en el tiempo visitando las cuatro ciudades imperiales de Marruecos: Marrakech, Fez, Meknes y Rabat.",
+        "contentBlocks": [
+          "La rica historia de Marruecos se experimenta mejor conduciendo entre sus cuatro Ciudades Imperiales. Comienza en Rabat, la capital moderna, donde las ruinas antiguas se encuentran con el Océano Atlántico.",
+          "Un corto viaje hacia el interior te lleva a Meknes, la ciudad de Moulay Ismail, con sus puertas masivas y las cercanas ruinas romanas de Volubilis. Desde allí, el corto trayecto a Fez te lleva al corazón espiritual del país.",
+          "Finalmente, dirígete al sur hacia Marrakech, la Ciudad Roja. El viaje de Fez a Marrakech es largo pero increíblemente pintoresco, ofreciendo vistas de las Montañas del Atlas antes de llegar a la vibrante y bulliciosa ciudad del sur."
+        ]
+      },
+      "atlantic-escapade": {
+        "title": "La Escapada Atlántica: De Casablanca a Agadir",
+        "excerpt": "Conduce por la pintoresca costa de Marruecos, disfrutando de mariscos frescos, lugares para surfear y relajadas vibraciones costeras.",
+        "contentBlocks": [
+          "La costa atlántica de Marruecos ofrece una experiencia de conducción completamente diferente. Comenzando en el centro económico de Casablanca, toma la carretera costera hacia el histórico puerto de El Yadida.",
+          "La verdadera joya de este viaje es Essaouira. Esta ciudad artística y ventosa es perfecta para una parada relajada. El trayecto es relativamente plano y fácil, lo que lo hace ideal para un cómodo coche de lujo o un compacto económico.",
+          "Continuando hacia el sur, llegarás al paraíso del surf de Taghazout antes de llegar finalmente a Agadir. La carretera costera ofrece vistas interminables del océano y atardeceres espectaculares durante todo el viaje."
+        ]
+      },
+      "driving-tips": {
+        "title": "Consejos Esenciales para Conducir en Marruecos",
+        "excerpt": "Una guía turística completa que cubre reglas, navegación y cómo elegir el coche adecuado para el diverso terreno marroquí.",
+        "contentBlocks": [
+          "Conducir en Marruecos es generalmente seguro y las carreteras entre las principales ciudades están bien mantenidas. Lleva siempre tu licencia de conducir, pasaporte y documentos de alquiler. Los límites de velocidad son estrictamente controlados por puntos de control policiales.",
+          "La navegación es sencilla con aplicaciones como Google Maps, pero se recomienda encarecidamente descargar mapas sin conexión, especialmente cuando te diriges a las Montañas del Atlas o al Sahara, donde la señal puede ser irregular.",
+          "Elegir el coche adecuado es crucial. Para la conducción costera y en la ciudad, un sedán económico o de lujo es perfecto. Sin embargo, si planeas conquistar el Atlas o dirigirte al desierto, alquilar un SUV fiable es muy recomendable por comodidad y seguridad."
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "Tu Viaje, Nuestra Pasión",
+    "heroSubtitle": "Experimenta Marruecos con un lujo y confort incomparables.",
+    "storyTitle": "Nuestra Historia",
+    "storyContent": "Fundada con un profundo amor por los paisajes marroquíes, Drive Car Go comenzó como una pequeña visión para elevar el estándar de los viajes. Pasamos rápidamente de una agencia de alquiler estándar a un proveedor dedicado a experiencias de viaje premium. Hoy en día, nos enorgullecemos de ofrecer una flota que cumple con los más altos estándares de lujo, combinada con una experiencia local que asegura que cada viaje sea inolvidable.",
+    "storyImageAlt": "Flota Premium de Drive Car Go en Marruecos",
+    "valuesTitle": "Nuestros Valores Fundamentales",
+    "values": {
+      "fleet": {
+        "title": "Flota Premium",
+        "desc": "Una selección meticulosamente mantenida de vehículos de lujo y aventura."
+      },
+      "support": {
+        "title": "Soporte 24/7",
+        "desc": "Asistencia las 24 horas para tu total tranquilidad."
+      },
+      "expertise": {
+        "title": "Experiencia Local",
+        "desc": "Profundo conocimiento de las carreteras, rutas y joyas ocultas de Marruecos."
+      },
+      "pricing": {
+        "title": "Precios Transparentes",
+        "desc": "Sin cargos ocultos. Lo que ves es exactamente lo que obtienes."
+      }
+    },
+    "stats": {
+      "cars": "+50 Coches Premium",
+      "clients": "+1000 Clientes Felices",
+      "assistance": "Asistencia 24/7"
+    },
+    "ctaTitle": "¿Listo para tu próxima aventura?",
+    "ctaButton": "Explora Nuestra Flota"
+  },
+  "seo": {
+    "title": "Drive Car Go | Alquiler de Coches de Lujo en Marruecos",
+    "desc": "Alquiler de coches de lujo y SUV en Marruecos. Servicio premium, viaje por carretera en Marruecos, entrega en el aeropuerto y soporte 24/7."
+  },
+  "admin": {
+    "title": "Gestionar Flota",
+    "addCar": "Añadir Nuevo Coche",
+    "editCar": "Editar Coche",
+    "deleteCar": "Eliminar Coche",
+    "confirmDelete": "¿Estás seguro de que quieres eliminar este coche? Esta acción no se puede deshacer.",
+    "deleteSuccess": "Coche eliminado exitosamente",
+    "addSuccess": "Coche añadido exitosamente",
+    "editSuccess": "Coche actualizado exitosamente",
+    "brand": "Marca",
+    "model": "Modelo",
+    "year": "Año",
+    "licensePlate": "Número de Matrícula",
+    "pricePerDay": "Precio por Día (MAD)",
+    "status": "Estado",
+    "image": "Imagen del Coche",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "statuses": {
+      "disponible": "Disponible",
+      "reservée": "Reservado",
+      "en_maintenance": "En Mantenimiento"
+    }
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "empty": "No hay notificaciones",
+    "markAllRead": "Marcar todas como leídas",
+    "justNow": "Ahora mismo",
+    "minutesAgo": "hace minutos",
+    "hoursAgo": "hace horas",
+    "client": {
+      "reservationApproved": {
+        "title": "Reserva Aprobada",
+        "message": "Tu reserva ha sido aprobada."
+      },
+      "reservationRejected": {
+        "title": "Reserva Rechazada",
+        "message": "Tu reserva ha sido rechazada."
+      },
+      "reservationCompleted": {
+        "title": "Reserva Completada",
+        "message": "Tu reserva ha sido completada."
+      },
+      "reservationCreatedByAdmin": {
+        "title": "Nueva Reserva Creada",
+        "message": "Se ha creado una nueva reserva para ti por la administración."
+      }
+    },
+    "admin": {
+      "newReservation": {
+        "title": "Nueva Reserva",
+        "message": "Se ha recibido una nueva reserva."
+      },
+      "newContactMessage": {
+        "title": "Nuevo Mensaje de Contacto",
+        "message": "{{name}} ha enviado un mensaje."
+      }
+    }
+  },
+  "whatsapp": {
+    "approve": "Hola {name}\n\nNos complace informarle que su reserva del vehículo {car} desde {startDate} hasta {endDate} ha sido confirmada.\n\nGracias por elegir nuestros servicios y le deseamos un excelente viaje.",
+    "reject": "Hola {name}\n\nLamentamos informarle que su solicitud de reserva para el vehículo {car} ha sido rechazada.\n\nPuede elegir otras fechas o ponerse en contacto con nosotros para obtener más información.",
+    "userCreated": "Hola {name}\n\nSu cuenta ha sido creada correctamente.\n\nInformación de la cuenta:\n\nNombre: {name}\nTeléfono: {phone}\nCNE: {cne}\nRol: {role}\n\nDatos de acceso:\n\nTeléfono: {phone}\nContraseña: {password}\n\nPor favor, guarde esta información en un lugar seguro.\n\nGracias por confiar en nosotros.",
+    "userUpdated": "Hola {name}\n\nLa información de su cuenta ha sido actualizada correctamente.\n\nInformación actualizada:\n\nNombre: {name}\nTeléfono: {phone}\nCNE: {cne}\nRol: {role}\n{passwordSection}\nGracias por su colaboración.",
+    "userUpdatedPasswordSection": "Datos de acceso:\n\nTeléfono: {phone}\nContraseña: {password}\n\nPor favor, guarde esta información en un lugar seguro.\n",
+    "adminCreated": "Hola {name}\n\nSe ha creado una nueva reserva para usted por la administración.\n\nVehículo: {car}\nFecha de recogida: {startDate}\nFecha de devolución: {endDate}\n\nGracias por confiar en nosotros."
+  }
+}

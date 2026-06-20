@@ -1,0 +1,600 @@
+{
+  "nav": {
+    "home": "Home",
+    "fleet": "Our Fleet",
+    "guides": "Travel Guides",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "myReservations": "My Reservations",
+    "profile": "Profile",
+    "logout": "Logout",
+    "adminFleet": "Manage Fleet",
+    "adminReservations": "Manage Reservations",
+    "adminDashboard": "Dashboard",
+    "adminUsers": "Users",
+    "adminContactMessages": "Contact Messages",
+    "adminSettings": "Settings",
+    "adminCreateReservation": "Create Reservation"
+  },
+  "admin": {
+    "createReservation": {
+      "title": "Create Reservation",
+      "selectClient": "Select Client",
+      "selectVehicle": "Select Vehicle",
+      "pickupDate": "Pickup Date",
+      "returnDate": "Return Date",
+      "create": "Create Reservation",
+      "cancel": "Cancel",
+      "creating": "Creating...",
+      "success": "Reservation created successfully!",
+      "clientRequired": "Please select a client",
+      "vehicleRequired": "Please select a vehicle",
+      "datesRequired": "Please select both dates",
+      "invalidDates": "Return date must be after pickup date",
+      "sendWhatsApp": "📱 Send WhatsApp Message",
+      "whatsApp": {
+        "greeting": "Hello {{name}}",
+        "message": "A new reservation has been created for you.",
+        "vehicle": "Vehicle: {{vehicle}}",
+        "pickup": "Pickup Date: {{date}}",
+        "return": "Return Date: {{date}}",
+        "thanks": "Thank you for choosing our services."
+      }
+    }
+  },
+  "adminDashboard": {
+    "title": "Dashboard",
+    "welcomeMessage": "Welcome back, {{name}}!",
+    "stats": {
+      "totalCars": "Total Cars",
+      "availableCars": "Available Cars",
+      "reservedCars": "Reserved Cars",
+      "totalReservations": "Total Reservations",
+      "pendingReservations": "Pending Reservations",
+      "confirmedReservations": "Confirmed Reservations",
+      "completedReservations": "Completed Reservations",
+      "cancelledReservations": "Cancelled Reservations",
+      "totalUsers": "Total Users",
+      "totalMessages": "Total Messages",
+      "unreadMessages": "Unread Messages"
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "latestReservations": "Latest Reservations",
+      "latestUsers": "Latest Users",
+      "latestCars": "Latest Cars Added",
+      "latestMessages": "Latest Messages"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "addNewCar": "Add New Car",
+      "manageFleet": "Manage Fleet",
+      "viewReservations": "View Reservations",
+      "manageUsers": "Manage Users",
+      "createReservation": "Create Reservation"
+    },
+    "charts": {
+      "reservationsByStatus": "Reservations by Status",
+      "monthlyReservations": "Monthly Reservations",
+      "fleetAvailability": "Fleet Availability",
+      "reservationsTrend": "Reservations Trend"
+    },
+    "loading": "Loading dashboard data..."
+  },
+  "adminContactMessages": {
+    "title": "Contact Messages",
+    "searchPlaceholder": "Search by name, phone, or CNE...",
+    "filterAll": "All",
+    "filterRead": "Read",
+    "filterUnread": "Unread",
+    "noMessages": "No messages found",
+    "messageFrom": "Message from",
+    "phone": "Phone",
+    "cne": "CNE",
+    "message": "Message",
+    "date": "Date",
+    "status": "Status",
+    "read": "Read",
+    "unread": "Unread",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this message?",
+    "deleteSuccess": "Message deleted successfully!"
+  },
+  "adminCreateReservation": {
+    "title": "Create Reservation",
+    "selectClient": "Select Client",
+    "selectVehicle": "Select Vehicle",
+    "pickupDate": "Pick-up Date",
+    "dropoffDate": "Drop-off Date",
+    "confirm": "Create Reservation",
+    "creating": "Creating...",
+    "success": "Reservation created successfully!",
+    "confirmSuccess": "Reservation created successfully!",
+    "error": "Error creating reservation",
+    "clientRequired": "Please select a client",
+    "vehicleRequired": "Please select a vehicle",
+    "datesRequired": "Please select both dates",
+    "invalidDates": "Return date must be after pickup date",
+    "sendWhatsApp": "📱 Send WhatsApp Message"
+  },
+  "adminReservations": {
+    "title": "Manage Reservations",
+    "all": "All",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "rejected": "Rejected",
+    "searchPlaceholder": "Search by name, CNE, phone, or brand...",
+    "reservationId": "Reservation ID",
+    "customerInfo": "Customer Information",
+    "fullName": "Full Name",
+    "cne": "CNE",
+    "phone": "Phone",
+    "email": "Email",
+    "pricePerDay": "Price per Day",
+    "registrationNumber": "Registration Number",
+    "rentalDuration": "Rental Duration",
+    "days": "days",
+    "approve": "Approve",
+    "reject": "Reject",
+    "markAsCompleted": "Mark as Completed",
+    "delete": "Delete",
+    "whatsApp": "Contact via WhatsApp",
+    "approveSuccess": "Reservation approved successfully!",
+    "rejectSuccess": "Reservation rejected successfully!",
+    "markAsCompletedSuccess": "Reservation marked as completed successfully!",
+    "deleteSuccess": "Reservation deleted successfully!",
+    "loading": "Loading reservations...",
+    "error": "Error loading reservations",
+    "noResults": "No reservations match your filters"
+  },
+  "adminUsers": {
+    "title": "Manage Users",
+    "totalUsers": "Total Users",
+    "totalClients": "Total Clients",
+    "totalAdmins": "Total Admins",
+    "searchPlaceholder": "Search by name, phone, or CNE...",
+    "noUsers": "No users found",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "passwordPlaceholder": "Leave blank to keep current",
+    "passwordRequired": "Password is required",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "nameRequired": "Full name is required",
+    "phoneRequired": "Phone number is required",
+    "cneRequired": "CNE is required",
+    "roleRequired": "Role is required",
+    "role": "Role",
+    "client": "Client",
+    "admin": "Admin",
+    "actions": "Actions",
+    "addUser": "Add New User",
+    "editUser": "Edit User",
+    "add": "Add",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "confirmDelete": "Confirm Deletion",
+    "confirmDeleteText": "Are you sure you want to delete user {{name}}? This action cannot be undone.",
+    "addSuccess": "User added successfully!",
+    "editSuccess": "User updated successfully!",
+    "deleteSuccess": "User deleted successfully!",
+    "errorFetch": "Error loading users",
+    "errorSave": "Error saving user",
+    "errorDelete": "Error deleting user"
+  },
+  "profile": {
+    "title": "My Profile",
+    "personalInfo": "Personal Information",
+    "security": "Security",
+    "passwordHint": "Leave the password fields blank to keep your current password.",
+    "memberSince": "Member since"
+  },
+  "reservations": {
+    "title": "My Reservations",
+    "subtitle": "View and manage all your reservations",
+    "reservationId": "Reservation ID",
+    "pickupDate": "Pick-up Date",
+    "dropoffDate": "Drop-off Date",
+    "duration": "Duration",
+    "rentalDuration": "Rental Duration",
+    "pricePerDay": "Price per Day",
+    "days": "days",
+    "status": {
+      "en_attente": "Pending",
+      "confirmée": "Confirmed",
+      "annulée": "Cancelled",
+      "terminée": "Completed"
+    },
+    "delete": "Delete Reservation",
+    "confirmDelete": "Confirm Deletion",
+    "cancel": "Cancel",
+    "deleting": "Deleting...",
+    "noReservations": "No Reservations Found",
+    "noReservationsDesc": "You haven't made any reservations yet.",
+    "browseFleet": "Browse Fleet",
+    "price": "Total Price"
+  },
+  "hero": {
+    "title": "Discover Morocco at Your Own Pace",
+    "subtitle": "Your Moroccan Adventure Starts Here.",
+    "cta": "Start Exploring"
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Connect to your account and continue booking.",
+    "loginRequired": "Please log in to make a reservation.",
+    "clientRoleRequired": "Only clients can make reservations.",
+    "registerTitle": "Create Your Account",
+    "registerSubtitle": "Register now and book your next journey.",
+    "adminRegisterTitle": "Create Admin Account",
+    "adminRegisterSubtitle": "Register a new administrator account",
+    "createAdminAccount": "Create Admin Account",
+    "adminSecretKey": "Admin Secret Key",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "rememberMe": "Remember me",
+    "loginButton": "Log In",
+    "registerButton": "Register",
+    "haveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "linkLogin": "Log in",
+    "linkRegister": "Register Now",
+    "passwordMismatch": "Passwords do not match",
+    "phoneInvalid": "Please enter a valid phone number (digits only)",
+    "invalidSecretKey": "Invalid admin secret key",
+    "adminRegisteredSuccess": "Admin account created successfully! Please login."
+  },
+  "fleet": {
+    "title": "Choose Your Travel Companion",
+    "subtitle": "Choose the perfect vehicle for your journey",
+    "registration": "Registration Number",
+    "empty": {
+      "title": "No cars found",
+      "description": "Try selecting a different price range or check back later for new additions"
+    },
+    "filters": {
+      "all": "All",
+      "economy": "Economy",
+      "mid-range": "Mid-range",
+      "luxury": "Luxury"
+    },
+    "bookNow": "Book Now",
+    "auto": "Auto",
+    "manual": "Manual",
+    "fuel": {
+      "petrol": "Petrol",
+      "diesel": "Diesel",
+      "electric": "Electric",
+      "hybrid": "Hybrid"
+    },
+    "pricePerDay": "MAD / day",
+    "pricePerWeek": "MAD / week",
+    "pricePerMonth": "MAD / month"
+  },
+  "booking": {
+    "step1": "Car Summary",
+    "step2": "Your Details",
+    "reserveNow": "Reserve This Car",
+    "next": "Next",
+    "back": "Back",
+    "confirm": "Confirm via WhatsApp",
+    "reserve": "Reserve",
+    "processing": "Processing...",
+    "success": "Reservation created successfully!",
+    "datesRequired": "Please select both start and end dates",
+    "invalidDateRange": "End date must be after start date",
+    "loading": "Loading...",
+    "alreadyReserved": "This car is already reserved for this period.",
+    "reservationError": "An error occurred during reservation:",
+    "tryAgain": "Please try again with different dates.",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "address": "Address",
+      "pickup": "Pick-up Date",
+      "dropoff": "Drop-off Date"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved. Drive Car Go.",
+    "sendMessage": "Send Message"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a premium car rental agency providing fast, reliable service. We handle bookings quickly via WhatsApp with immediate client response.",
+    "stats": {
+      "response": "Response Time: < 5 min",
+      "satisfaction": "100% Satisfaction",
+      "delivery": "Fast Delivery"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "info": {
+      "title": "Contact Information",
+      "locationLabel": "Our Location",
+      "locationValue": "Aéroport Mohammed V, Casablanca, Morocco",
+      "phoneLabel": "Phone Number",
+      "phoneValue": "+212 777 543 264",
+      "emailLabel": "Email Address",
+      "emailValue": "contact@drivecargo.com",
+      "workingHoursLabel": "Working Hours",
+      "workingHoursValue": "24/7 Support Available"
+    },
+    "form": {
+      "title": "Send a Message",
+      "namePlaceholder": "Your Name",
+      "phonePlaceholder": "Your Phone Number",
+      "cnePlaceholder": "Your CNE",
+      "messagePlaceholder": "Your Message",
+      "submitButton": "Send Message",
+      "submittingButton": "Sending...",
+      "phoneInvalidError": "Please enter a valid phone number (digits, +, -, spaces only)",
+      "successToast": "Message sent successfully!",
+      "errorToast": "Failed to send message. Please try again."
+    }
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "subtitle": "Oops! The page you're looking for doesn't exist.",
+    "description": "The page you are trying to reach might have been removed, had its name changed, or is temporarily unavailable.",
+    "goHomeButton": "Go Home",
+    "browseFleetButton": "Browse Fleet"
+  },
+  "location": {
+    "title": "Our Location",
+    "description": "Aéroport Mohammed V, Casablanca"
+  },
+  "showcase": {
+    "title": "Choose Your Travel Companion",
+    "bookNow": "Book Now"
+  },
+  "destinations": {
+    "title": "Destinations & Experiences",
+    "card1": {
+      "title": "Atlas Mountains & Sahara",
+      "desc": "Conquer the dunes and valleys.",
+      "recommend": "Recommended: SUVs"
+    },
+    "card2": {
+      "title": "Coastal Escapes",
+      "desc": "Relax by the ocean from Essaouira to Agadir.",
+      "recommend": "Recommended: Luxury / Minibus"
+    },
+    "card3": {
+      "title": "City Exploring",
+      "desc": "Navigate the bustling streets of Marrakech and Casablanca.",
+      "recommend": "Recommended: Economic / Compact"
+    }
+  },
+  "destinationDetails": {
+    "placesToVisitTitle": "Places to Visit",
+    "recommendedCarsTitle": "Recommended Vehicles",
+    "recommendedCarsSubtitle": "Vehicles best suited for this terrain.",
+    "mapTitle": "Explore the Route",
+    "mapSubtitle": "Get a feel for your journey on the map.",
+    "sahara": {
+      "title": "Atlas Mountains & Sahara",
+      "subtitle": "Experience the majestic peaks and endless dunes.",
+      "places": {
+        "ouarzazate": {
+          "title": "Ouarzazate",
+          "desc": "Known as the door of the desert, this city is famous for its cinematic landscapes and ancient kasbahs.",
+          "distance": "200 km from Marrakech"
+        },
+        "merzouga": {
+          "title": "Merzouga Dunes",
+          "desc": "Witness breathtaking sunsets over the towering sand dunes of Erg Chebbi. A truly magical experience.",
+          "distance": "Deep into the Sahara"
+        },
+        "ait_ben_haddou": {
+          "title": "Aït Benhaddou",
+          "desc": "A historic fortified village along the former caravan route between the Sahara and Marrakech.",
+          "distance": "UNESCO World Heritage Site"
+        }
+      }
+    },
+    "coastal": {
+      "title": "Coastal Escapes",
+      "subtitle": "Discover tranquil beaches and vibrant coastal towns.",
+      "places": {
+        "essaouira": {
+          "title": "Essaouira",
+          "desc": "A charming port city with a beautiful medina, historic ramparts, and a relaxed, artsy vibe.",
+          "distance": "190 km from Marrakech"
+        },
+        "taghazout": {
+          "title": "Taghazout",
+          "desc": "A famous fishing village turned surfing paradise. Perfect for catching waves and relaxing on pristine shores.",
+          "distance": "North of Agadir"
+        },
+        "agadir": {
+          "title": "Agadir",
+          "desc": "Known for its wide crescent beach, bustling promenade, and year-round sunshine.",
+          "distance": "Major Coastal Hub"
+        }
+      }
+    },
+    "city": {
+      "title": "City Exploring",
+      "subtitle": "Immerse yourself in the bustling medinas and rich history.",
+      "places": {
+        "marrakech": {
+          "title": "Marrakech",
+          "desc": "The Red City, filled with vibrant souks, stunning palaces, and the lively Jemaa el-Fnaa square.",
+          "distance": "Cultural Heart"
+        },
+        "chefchaouen": {
+          "title": "Chefchaouen",
+          "desc": "The famous Blue City nestled in the Rif Mountains, offering picturesque alleys and a calm atmosphere.",
+          "distance": "Northern Jewel"
+        },
+        "fes": {
+          "title": "Fes",
+          "desc": "Home to the oldest continuously functioning university in the world and an incredibly intricate medieval medina.",
+          "distance": "Spiritual Capital"
+        }
+      }
+    }
+  },
+  "blog": {
+    "title": "Travel Guides & Moroccan Road Trips",
+    "subtitle": "Discover the beauty of Morocco with our exclusive travel guides.",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "minRead": "min read",
+    "articles": {
+      "ultimate-road-trip": {
+        "title": "The Ultimate Moroccan Road Trip: Tangier to Merzouga",
+        "excerpt": "Experience the diversity of Morocco, from Mediterranean charm to golden dunes, in this comprehensive road trip guide.",
+        "contentBlocks": [
+          "Starting your journey in Tangier, you'll immediately feel the blend of Mediterranean breeze and North African culture. The drive south takes you through the stunning Rif Mountains, where the blue city of Chefchaouen awaits.",
+          "As you continue towards the center of the country, the landscape transforms. The lush greenery gives way to the stark beauty of the Middle Atlas, passing through Ifrane and the cedar forests of Azrou.",
+          "The grand finale of this ultimate road trip is reaching the Sahara. Driving into Merzouga and seeing the golden dunes of Erg Chebbi rise from the flat desert is a memory that will last a lifetime. Prepare your SUV for an unforgettable adventure."
+        ]
+      },
+      "imperial-cities": {
+        "title": "Exploring the Imperial Cities: A Historic Drive",
+        "excerpt": "Take a journey through time by visiting Morocco's four imperial cities: Marrakech, Fes, Meknes, and Rabat.",
+        "contentBlocks": [
+          "Morocco's rich history is best experienced by driving between its four Imperial Cities. Start in Rabat, the modern capital, where ancient ruins meet the Atlantic Ocean.",
+          "A short drive inland brings you to Meknes, the city of Moulay Ismail, featuring massive gates and the nearby Roman ruins of Volubilis. From there, the short journey to Fes takes you into the spiritual heart of the country.",
+          "Finally, head south to Marrakech, the Red City. The drive from Fes to Marrakech is long but incredibly scenic, offering views of the Atlas Mountains before arriving in the bustling, vibrant city of the south."
+        ]
+      },
+      "atlantic-escapade": {
+        "title": "The Atlantic Escapade: Casablanca to Agadir",
+        "excerpt": "Drive the scenic coastline of Morocco, enjoying fresh seafood, surfing spots, and relaxed coastal vibes.",
+        "contentBlocks": [
+          "The Atlantic coast of Morocco offers a completely different driving experience. Starting in the economic hub of Casablanca, take the coastal road down towards the historic port of El Jadida.",
+          "The real gem of this trip is Essaouira. This windy, artistic city is perfect for a relaxed stopover. The drive is relatively flat and easy, making it ideal for a comfortable luxury car or an economic compact.",
+          "Continuing south, you'll reach the surfing paradise of Taghazout before finally arriving in Agadir. The coastal highway provides endless ocean views and spectacular sunsets throughout your journey."
+        ]
+      },
+      "driving-tips": {
+        "title": "Essential Tips for Driving in Morocco",
+        "excerpt": "A complete tourist guide covering rules, navigation, and choosing the right car for the diverse Moroccan terrain.",
+        "contentBlocks": [
+          "Driving in Morocco is generally safe and roads between major cities are well-maintained. Always carry your driver's license, passport, and rental documents. Speed limits are strictly enforced by police checkpoints.",
+          "Navigation is straightforward with apps like Google Maps, but downloading offline maps is highly recommended, especially when heading into the Atlas Mountains or the Sahara where signal can be spotty.",
+          "Choosing the right car is crucial. For coastal and city driving, an economic or luxury sedan is perfect. However, if you plan to conquer the Atlas or head to the desert, renting a reliable SUV is highly recommended for comfort and safety."
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "Your Journey, Our Passion",
+    "heroSubtitle": "Experience Morocco with unparalleled luxury and comfort.",
+    "storyTitle": "Our Story",
+    "storyContent": "Founded with a deep love for Moroccan landscapes, Drive Car Go began as a small vision to elevate the standard of travel. We quickly transitioned from a standard rental agency to a dedicated provider of premium travel experiences. Today, we pride ourselves on offering a fleet that meets the highest standards of luxury, paired with local expertise that ensures every journey is unforgettable.",
+    "storyImageAlt": "Drive Car Go Premium Fleet in Morocco",
+    "valuesTitle": "Our Core Values",
+    "values": {
+      "fleet": {
+        "title": "Premium Fleet",
+        "desc": "A meticulously maintained selection of luxury and adventure vehicles."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "Round-the-clock assistance for complete peace of mind."
+      },
+      "expertise": {
+        "title": "Local Expertise",
+        "desc": "Deep knowledge of Moroccan roads, routes, and hidden gems."
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "desc": "No hidden fees. What you see is exactly what you get."
+      }
+    },
+    "stats": {
+      "cars": "+50 Premium Cars",
+      "clients": "+1000 Happy Clients",
+      "assistance": "24/7 Assistance"
+    },
+    "ctaTitle": "Ready for your next adventure?",
+    "ctaButton": "Explore Our Fleet"
+  },
+  "seo": {
+    "title": "Drive Car Go | Premium Car Rental Morocco",
+    "desc": "Rent luxury cars and SUVs in Morocco. Premium service, airport delivery, and 24/7 support. Developed by Ahmed Ben Ammi and Abderrahman Taki.",
+    "ogTitle": "Drive Car Go | Premium Car Rental Morocco",
+    "ogDesc": "Rent luxury cars and SUVs in Morocco. Premium service, airport delivery, and 24/7 support. Developed by Ahmed Ben Ammi and Abderrahman Taki."
+  },
+  "admin": {
+    "title": "Manage Fleet",
+    "addCar": "Add New Car",
+    "editCar": "Edit Car",
+    "deleteCar": "Delete Car",
+    "confirmDelete": "Are you sure you want to delete this car? This action cannot be undone.",
+    "deleteSuccess": "Car deleted successfully",
+    "addSuccess": "Car added successfully",
+    "editSuccess": "Car updated successfully",
+    "brand": "Brand",
+    "model": "Model",
+    "year": "Year",
+    "licensePlate": "License Plate",
+    "pricePerDay": "Price per Day (MAD)",
+    "status": "Status",
+    "image": "Car Image",
+    "save": "Save",
+    "cancel": "Cancel",
+    "statuses": {
+      "disponible": "Available",
+      "reservée": "Reserved",
+      "en_maintenance": "In Maintenance"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications",
+    "markAllRead": "Mark all as read",
+    "justNow": "Just now",
+    "minutesAgo": "minutes ago",
+    "hoursAgo": "hours ago",
+    "client": {
+      "reservationApproved": {
+        "title": "Reservation Approved",
+        "message": "Your reservation has been approved."
+      },
+      "reservationRejected": {
+        "title": "Reservation Rejected",
+        "message": "Your reservation has been rejected."
+      },
+      "reservationCompleted": {
+        "title": "Reservation Completed",
+        "message": "Your reservation has been completed."
+      },
+      "reservationCreatedByAdmin": {
+        "title": "New Reservation Created",
+        "message": "A new reservation has been created for you by the administration."
+      }
+    },
+    "admin": {
+      "newReservation": {
+        "title": "New Reservation",
+        "message": "A new reservation has been received."
+      },
+      "newContactMessage": {
+        "title": "New Contact Message",
+        "message": "{{name}} has sent a message"
+      }
+    }
+  },
+  "whatsapp": {
+    "approve": "Hello {name}\n\nWe are pleased to inform you that your reservation for the {car} from {startDate} to {endDate} has been approved.\n\nThank you for choosing our service and we wish you a pleasant trip.",
+    "reject": "Hello {name}\n\nWe regret to inform you that your reservation request for the {car} has been declined.\n\nYou may choose other dates or contact us for further information.",
+    "userCreated": "Hello {name}\n\nYour account has been successfully created.\n\nAccount Information:\n\nName: {name}\nPhone: {phone}\nCNE: {cne}\nRole: {role}\n\nLogin Information:\n\nPhone: {phone}\nPassword: {password}\n\nPlease keep this information in a safe place.\n\nThank you for using our services.",
+    "userUpdated": "Hello {name}\n\nYour account information has been successfully updated.\n\nUpdated Information:\n\nName: {name}\nPhone: {phone}\nCNE: {cne}\nRole: {role}\n{passwordSection}\nThank you for your cooperation.",
+    "userUpdatedPasswordSection": "Login Information:\n\nPhone: {phone}\nPassword: {password}\n\nPlease keep this information in a safe place.\n",
+    "adminCreated": "Hello {name}\n\nA new reservation has been created for you by the administration.\n\nVehicle: {car}\nPickup Date: {startDate}\nReturn Date: {endDate}\n\nThank you for choosing our services."
+  }
+}

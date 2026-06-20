@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #C17767; /* Terracotta / warm sand accent */
+  --color-primary-hover: #D48C7B;
+  --color-dark: #F9F6F0; /* Off-white/light beige */
+  --color-dark-lighter: #F0EAD6; /* Warm sand / taupe */
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Outfit', system-ui, sans-serif;
+
+  --animate-drive: drive 2s ease-in-out infinite;
+  --animate-progress-fill: progress-fill 2s ease-in-out infinite;
+
+  @keyframes drive {
+    0% { left: 0%; transform: translateX(0); }
+    50% { left: 100%; transform: translateX(-100%); }
+    100% { left: 0%; transform: translateX(0); }
+  }
+
+  @keyframes progress-fill {
+    0% { width: 0%; }
+    50% { width: 100%; }
+    100% { width: 0%; }
+  }
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-dark);
+    color: #333333;
+  }
+  
+  body {
+    @apply antialiased min-h-screen selection:bg-primary/30 selection:text-black bg-dark text-gray-900 transition-colors duration-300 dark:bg-[#121212] dark:text-gray-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* RTL Support utility overrides if needed */
+[dir="rtl"] {
+  font-family: 'Tajawal', 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-black/5 shadow-sm;
+}
