@@ -89,12 +89,12 @@ const NotificationDropdown = () => {
         )}
       </button>
 
-      {isOpen && (
-        <div
-          ref={dropdownRef}
-          className="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-80 max-h-96 max-w-[90vw] bg-white dark:bg-zinc-900 rounded-xl shadow-lg border border-gray-200 dark:border-zinc-800 z-50"
-        >
-          <div className="flex flex-col max-h-96 overflow-hidden">
+      {/* Responsive dropdown below the bell icon with viewport-safe mobile spacing */}
+      <div
+        ref={dropdownRef}
+        className={`absolute right-2 left-auto md:right-0 md:left-auto mt-2 w-auto md:w-80 max-w-[calc(100vw-20px)] min-w-0 bg-white dark:bg-zinc-900 rounded-xl shadow-lg border border-gray-200 dark:border-zinc-800 z-50 transform-gpu transition-all duration-200 ease-out origin-top-right ${isOpen ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-95 -translate-y-1 pointer-events-none'}`}
+      >
+        <div className="flex flex-col overflow-hidden max-h-[60vh] md:max-h-96">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-zinc-800">
               <h3 className="text-lg font-bold text-gray-900 dark:text-white">
@@ -155,7 +155,6 @@ const NotificationDropdown = () => {
             </div>
           </div>
         </div>
-      )}
     </div>
   );
 };

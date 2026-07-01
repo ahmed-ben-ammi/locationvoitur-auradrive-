@@ -80,8 +80,10 @@ export default function NavBar() {
   return (
     <nav
       className={clsx(
-        'fixed w-full z-50 transition-all duration-300 ease-in-out',
-        scrolled ? 'bg-white/90 dark:bg-[#121212]/90 backdrop-blur-md py-3 shadow-sm border-b border-black/5 dark:border-white/5' : 'bg-transparent py-5'
+        'fixed w-full z-50 transition-all duration-300 ease-in-out bg-white border-b border-[#E5E7EB] shadow-sm',
+        scrolled
+          ? 'py-3 dark:bg-[#121212]/90 dark:border-white/5 backdrop-blur-md'
+          : 'py-5 dark:bg-transparent dark:border-transparent'
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,7 +91,7 @@ export default function NavBar() {
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 mr-4">
             <img src={brandLogo} alt="Drive Car Go Logo" className="h-10 w-auto" />
-            <span className="text-2xl font-heading font-bold tracking-wider uppercase transition-colors duration-300 text-gray-900 dark:text-white">
+            <span className="text-2xl font-heading font-bold tracking-wider uppercase transition-colors duration-300 text-slate-900 dark:text-white">
               DRIVE CAR GO
             </span>
           </NavLink>
@@ -103,7 +105,7 @@ export default function NavBar() {
                 className={({ isActive }) =>
                   clsx(
                     'text-sm uppercase tracking-widest font-medium transition-colors hover:text-primary dark:hover:text-[#C17767]',
-                    isActive ? 'text-primary dark:text-[#C17767]' : 'text-gray-600 dark:text-gray-100'
+                    isActive ? 'text-primary dark:text-[#C17767]' : 'text-slate-700 dark:text-gray-100'
                   )
                 }
               >
@@ -120,7 +122,7 @@ export default function NavBar() {
                       className={({ isActive }) =>
                         clsx(
                           'text-sm uppercase tracking-widest font-medium transition-colors hover:text-primary dark:hover:text-[#C17767]',
-                          isActive ? 'text-primary dark:text-[#C17767]' : 'text-gray-600 dark:text-gray-100'
+                          isActive ? 'text-primary dark:text-[#C17767]' : 'text-slate-700 dark:text-gray-100'
                         )
                       }
                     >
@@ -131,7 +133,7 @@ export default function NavBar() {
                       className={({ isActive }) =>
                         clsx(
                           'text-sm uppercase tracking-widest font-medium transition-colors hover:text-primary dark:hover:text-[#C17767]',
-                          isActive ? 'text-primary dark:text-[#C17767]' : 'text-gray-600 dark:text-gray-100'
+                          isActive ? 'text-primary dark:text-[#C17767]' : 'text-slate-700 dark:text-gray-100'
                         )
                       }
                     >
@@ -144,7 +146,7 @@ export default function NavBar() {
                   className={({ isActive }) =>
                     clsx(
                       'text-sm uppercase tracking-widest font-medium transition-colors hover:text-primary dark:hover:text-[#C17767]',
-                      isActive ? 'text-primary dark:text-[#C17767]' : 'text-gray-600 dark:text-gray-100'
+                      isActive ? 'text-primary dark:text-[#C17767]' : 'text-slate-700 dark:text-gray-100'
                     )
                   }
                 >
@@ -156,14 +158,14 @@ export default function NavBar() {
                     onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                     className="flex items-center gap-2 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
                   >
-                    <div className="w-8 h-8 bg-[#C17767]/20 rounded-full flex items-center justify-center">
-                      <User className="w-4 h-4 text-[#C17767]" />
+                    <div className="w-8 h-8 bg-slate-100 dark:bg-[#C17767]/20 rounded-full flex items-center justify-center">
+                      <User className="w-4 h-4 text-slate-700 dark:text-[#C17767]" />
                     </div>
                   </button>
                   {/* Dropdown Menu */}
                   <div 
                     className={clsx(
-                      "absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-56 bg-white dark:bg-[#1a1a1a] border border-black/5 dark:border-white/5 rounded-lg shadow-xl transition-all duration-200 overflow-hidden z-50",
+                      "absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-56 bg-white dark:bg-[#1a1a1a] border border-[#E5E7EB] dark:border-white/5 rounded-lg shadow-xl transition-all duration-200 overflow-hidden z-50",
                       isUserMenuOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95 pointer-events-none"
                     )}
                   >
@@ -180,7 +182,7 @@ export default function NavBar() {
                         handleLogout();
                         setIsUserMenuOpen(false);
                       }}
-                      className="flex items-center gap-3 px-4 py-3 w-full text-left text-gray-600 dark:text-gray-100 hover:bg-red-50 dark:hover:bg-red-950/20 hover:text-red-600 dark:hover:text-red-400 transition-colors border-t border-black/5 dark:border-white/5"
+                      className="flex items-center gap-3 px-4 py-3 w-full text-left text-slate-700 dark:text-gray-100 hover:bg-red-50 dark:hover:bg-red-950/20 hover:text-red-600 dark:hover:text-red-400 transition-colors border-t border-[#E5E7EB] dark:border-white/5"
                     >
                       <LogOut className="w-5 h-5" />
                       <span>{t('nav.logout')}</span>
@@ -198,7 +200,7 @@ export default function NavBar() {
                       'px-4 py-2 rounded-full uppercase tracking-widest text-xs font-semibold transition-all duration-300 border',
                       isActive
                         ? 'bg-primary border-primary text-white shadow-md'
-                        : 'bg-white dark:bg-[#242424] border-black/10 dark:border-white/10 text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#1a1a1a]'
+                        : 'bg-white dark:bg-[#242424] border-[#E5E7EB] dark:border-white/10 text-slate-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#1a1a1a]'
                     )
                   }
                 >
@@ -215,7 +217,7 @@ export default function NavBar() {
             <div className="relative lang-dropdown">
               <button 
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                className="flex items-center gap-2 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors p-2 rounded-full"
+                className="flex items-center gap-2 text-slate-700 dark:text-gray-100 hover:text-slate-800 dark:hover:text-[#C17767] transition-colors p-2 rounded-full"
               >
                 <img src={currentLanguage.flag} alt={currentLanguage.label} className="w-5 h-5 rounded-[2px] object-cover shadow-sm" loading="lazy" />
                 <span className="text-sm uppercase font-medium hidden lg:inline">{i18n.language}</span>
@@ -242,7 +244,7 @@ export default function NavBar() {
             {/* Dark Mode Toggle */}
             <button 
               onClick={toggleTheme}
-              className="flex items-center justify-center p-2 rounded-full text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-300 ml-2"
+              className="flex items-center justify-center p-2 rounded-full text-slate-700 dark:text-gray-100 hover:text-slate-800 dark:hover:text-[#C17767] hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-300 ml-2"
               aria-label="Toggle Dark Mode"
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -254,7 +256,7 @@ export default function NavBar() {
             {/* Dark Mode Toggle (Mobile) */}
             <button 
               onClick={toggleTheme}
-              className="p-2 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors rounded-full"
+              className="p-2 text-slate-700 dark:text-gray-100 hover:text-slate-800 dark:hover:text-[#C17767] transition-colors rounded-full"
               aria-label="Toggle Dark Mode"
             >
               {theme === 'dark' ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
@@ -264,7 +266,7 @@ export default function NavBar() {
             <div className="relative lang-dropdown">
               <button 
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                className="flex items-center gap-1 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors p-2 rounded-full"
+                className="flex items-center gap-1 text-slate-700 dark:text-gray-100 hover:text-slate-800 dark:hover:text-[#C17767] transition-colors p-2 rounded-full"
               >
                 <img src={currentLanguage.flag} alt={currentLanguage.label} className="w-6 h-6 rounded-[2px] object-cover shadow-sm" loading="lazy" />
               </button>
@@ -297,8 +299,8 @@ export default function NavBar() {
                   onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                   className="flex items-center gap-2 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
                 >
-                  <div className="w-9 h-9 bg-[#C17767]/20 rounded-full flex items-center justify-center">
-                    <User className="w-5 h-5 text-[#C17767]" />
+                  <div className="w-9 h-9 bg-slate-100 dark:bg-[#C17767]/20 rounded-full flex items-center justify-center">
+                    <User className="w-5 h-5 text-slate-700 dark:text-[#C17767]" />
                   </div>
                 </button>
                 {/* Dropdown Menu for Mobile */}
@@ -336,7 +338,7 @@ export default function NavBar() {
             {/* Hamburger Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-900 dark:text-white hover:text-primary dark:hover:text-[#C17767] transition-colors p-2 rounded-full"
+              className="text-slate-700 dark:text-white hover:text-slate-900 dark:hover:text-[#C17767] transition-colors p-2 rounded-full"
             >
               {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </button>
